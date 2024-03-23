@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import imageOne from "../assets/img-4.png"
+import { Button } from "flowbite-react";
+
+---
+<div>
+
+  <div class="flex flex-col gap-10 sm:gap-20 justify-center align-center sm:flex-row">
+    <div class="flex flex-col flex-start self-center justify-left sm:w-4/12 p-10">
+      <h1 class="text-white	font-bold text-2xl text-center sm:text-4xl sm:text-left">ESTA PÁGINA ESTÁ SIENDO CONSTUIDA</h1>
+      <p class="text-white text-whitefont-base text-xl text-center sm:text-xl sm:text-left">estamos trabajando en cositas...</p>
+    </div>
+  
+      <a class="transition-all hover:scale-110 p-2 w-7/12 sm:w-4/12 h-full self-center">
+        <Image 
+          src={imageOne}
+          alt="imagen"
+          class="saturate-0 transition-all hover:saturate-100"
+        />
+      </a>
+      
+    </div>
+
+</div>
