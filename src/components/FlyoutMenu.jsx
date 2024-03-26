@@ -40,7 +40,7 @@ export default function FlyoutMenu() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute left-1/2 z-10 w-full max-w-sm -translate-x-1/2 mt-32 transform  sm:px-0 lg:max-w-3xl">
+              <Popover.Panel className="absolute left-1/2 z-10 w-11/12 max-w-sm -translate-x-1/2 mt-32 transform  sm:px-0 lg:max-w-3xl">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                   <div className="relative grid gap-5 justify-center bg-white p-7">
                     <a
