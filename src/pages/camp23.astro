@@ -1,19 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro"
+import Retiro23 from '@/components/Retiro23'
 ---
 
 <Layout title="Retiro23">
-  <section class="flex flex-col ">
-    <h1 class="text-center text-white font-black text-3xl">NUESTRO RETIRO '23</h1>
-    <div class='grid justify-items-center w-6/12 lg:w-4/12 self-center gap-5 relative m-10 p-5 bg-white bg-opacity-50 backdrop-blur-xl	rounded-lg'>
-      <h1 class='text-center font-black text-white text-3xl md:text-3xl'>Recordá con las fotos</h1>
-      <a class='group w-30 h-30 sm:w-36 sm:h-36 bg-white my-3 m-2 p-2 flex flex-col justify-between gap-2 text-center text-2xl select-none transition ease-in-out delay-50 rounded-lg hover:bg-gray-100  focus:z-10 focus:ring-2 focus:ring-areo-lightblue focus:text-areo-lightblue' href="https://drive.google.com/drive/folders/1725gWY7uvfIJR8QTGA036LhCBJx5Xj40?usp=sharing">
-        <svg class="w-7 m-1 group-hover:fill-areo-lightblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" >
-          <path d="M44.52 28H30.99L17.71 5h11.221c1.429 0 2.749.762 3.464 2L44.52 28zM44.32 31l-5.766 9.998C37.84 42.237 36.519 43 35.089 43H11.71l6.93-12H44.32zM22.21 18.8L9.15 41.42l-5.766-9.99c-.714-1.238-.714-2.762 0-4L15.29 6.81 22.21 18.8z"/>
-        </svg>
-        <p class='text-black font-bold text-xl m-1 text-right group-hover:text-areo-lightblue'>Nuestras fotos</p>
-        {/* px-4 py-2 text-base font-semibold text-gray-900 rounded-lg */}
-      </a>
-    </div>
+
+  <section class="flex flex-col">
+    <h1 class="text-center text-white m-8 font-black text-4xl">RETIRO '23</h1>
+    <Retiro23 client:visible />
+
   </section>
 </Layout>

@@ -1,17 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import imageOne from "../assets/img-4.avif"
+import imageOne from "@/assets/img-4.avif"
 
 ---
-<div class="flex flex-col gap-10 sm:gap-20 justify-center align-center sm:flex-row">
-  <div class="flex flex-row justify-left sm:w-4/12 p-10">
-    <h1 class="text-white text-3xl w-98 self-center font-bold text-2xl text-center sm:text-3xl sm:text-left">ESTA PÁGINA ESTÁ SIENDO CONSTRUIDA</h1>
-    <section class="transition-all hover:scale-110 p-2 w-7/12 sm:w-4/12 h-full self-center">
-      <Image 
-        src={imageOne}
-        alt="imagen"
-        class="saturate-0 transition-all hover:saturate-100"
-      />
-    </section>
+<div class="flex flex-col justify-center w-screen ">
+  <div class="flex flex-col justify-between align-center sm:flex-row sm:justify-center gap-10 my-10">
+    <h1 class="m-4 mx-20 text-white text-center text-3xl font-bold sm:w-3/12 self-center sm:text-3xl sm:text-left">ESTA PÁGINA ESTÁ SIENDO CONSTRUIDA</h1>
+    <Image 
+      src={imageOne}
+      alt="Varios de los chicos en el retiro"
+      class="self-center w-4/12 m-4 mx-20 sm:saturate-0 transition-all sm:hover:saturate-100 hover:scale-110" 
+    />
   </div>
 </div>
