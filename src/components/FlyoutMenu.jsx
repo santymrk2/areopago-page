@@ -1,14 +1,16 @@
 import React from "react";
 import { Image, Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, DropdownTrigger, Button, Dropdown, DropdownMenu, DropdownItem} from "@nextui-org/react";
 import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "@/components/Icons";
+import Logo23 from '@/assets/Retiro23.webp'
+import Logo24 from '@/assets/Incognito.webp'
 
 export default function App() {
 
 
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
-    retiro23: <Image src="/Retiro23.webp" alt="retiro 2023" width={70}/>,
-    retiro24: <Image src="/Incognito.webp" alt="retiro 2023" width={70}/>
+    retiro23: <Image src={Logo23} alt="retiro 2023" width={70}/>,
+    retiro24: <Image src={Logo24} alt="retiro 2023" width={70}/>
   }
 
   return (
