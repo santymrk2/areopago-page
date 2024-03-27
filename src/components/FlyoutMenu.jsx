@@ -1,13 +1,14 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, DropdownTrigger, Button, Dropdown, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import { Image, Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, DropdownTrigger, Button, Dropdown, DropdownMenu, DropdownItem} from "@nextui-org/react";
 import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "@/components/Icons";
-
 
 export default function App() {
 
 
   const icons = {
-    chevron: <ChevronDown fill="currentColor" size={16} />
+    chevron: <ChevronDown fill="currentColor" size={16} />,
+    retiro23: <Image src="/Retiro23.webp" alt="retiro 2023" width={70}/>,
+    retiro24: <Image src="/Incognito.webp" alt="retiro 2023" width={70}/>
   }
 
   return (
@@ -18,7 +19,6 @@ export default function App() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-
         <svg id="LogoSolo" height="52px" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
           <polygon className="cls-1" points="307.37 668.79 339.13 613.79 190.75 356.8 127.25 356.8 307.37 668.79"/>
           <polygon className="cls-1" points="373.85 640.2 342.1 695.2 709.9 695.2 678.15 640.2 373.85 640.2"/>
@@ -72,7 +72,7 @@ export default function App() {
             <DropdownTrigger >
               <Button
                 disableRipple
-                className="p-0 bg-transparent light data-[hover=true]:bg-transparent px-2 py-2 text-md text-center font-semibold  rounded-lg hover:bg-gray-100 hover:text-areo-lightblue focus:z-10 focus:ring-2 focus:ring-areo-lightblue focus:text-areo-lightblue"
+                className="p-0 bg-transparent light data-[hover=true]:bg-transparent px-2 py-2 text-md text-center font-semibold rounded-lg hover:bg-gray-100 hover:text-areo-lightblue focus:z-10 focus:ring-2 focus:ring-areo-lightblue focus:text-areo-lightblue"
                 endContent={icons.chevron}
                 radius="lg"
               >
@@ -84,7 +84,7 @@ export default function App() {
             aria-label="ACME features"
             className="w-[250px] light"
             itemClasses={{
-              base: "gap-5",
+              base: "gap-3",
             }}
           >
             <DropdownItem
